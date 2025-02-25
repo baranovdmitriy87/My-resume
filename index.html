@@ -16,32 +16,55 @@
         <li><a href="#skills">Навыки</a></li>
         <li><a href="#projects">Проекты</a></li>
         <li><a href="#contact">Контакты</a></li>
-        <li><a href="#socials">Социальные сети</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <div class="hero-content">
-      <img src="img/main-photo.jpg" width="300" alt="фото Дмитрия" style="border-radius: 10px;">
-      <h1>Дмитрий Баранов</h1>
-      <!-- <h2>Добро пожаловать на мой сайт-резюме</h2> -->
-      <p>Узнайте немного обо мне, моих навыках, опыте и проектах.</p>
-      <a href="#about" class="cta">Подробнее</a>
+    <div class="hero-container">
+      <img src="img/main-photo.jpg" width="450" alt="фото Дмитрия">
+
+      <div class="hero-content">
+        <h1>Дмитрий Баранов</h1>
+        <!-- <h2>Добро пожаловать на мой сайт-резюме</h2> -->
+        <p>Узнайте немного обо мне, моих навыках, опыте работы и проектах.</p>
+
+        <h4>Список социальных сетей:</h4>
+        <ul class="socials">
+          <li class="socials-item">
+            <a href="https://web.telegram.org/k/" target="_blank">Telegram</a>
+          </li>
+          <li class="socials-item">
+            <a href="https://telegram.me/s/INSTAGRAM" target="_blank">Instagram</a>
+          </li>
+          <li class="socials-item">
+            <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+          </li>
+        </ul>
+        <a href="#about" class="cta">Подробнее</a>
+      </div>
     </div>
   </section>
 
   <section id="about" class="section">
-    <h2>О себе</h2>
-    <p>Hello! I’m a passionate web developer with a love for creating amazing user experiences. I specialize in
-      front-end technologies like HTML, CSS, JavaScript, and React. I love to build visually stunning and highly
-      interactive websites. My goal is to always learn and grow, and create awesome digital solutions.</p>
+    <h2>О Себе</h2>
+    <p>
+      Привет! Я начинающий веб-разработчик, которому нравится создавать потрясающие пользовательские интерфейсы. Я
+      специализируюсь на интерфейсных технологиях, таких как HTML, CSS, JavaScript. Мне нравится создавать
+      визуально потрясающие и высокоинтерактивные веб-сайты. Моя цель - всегда учиться, расти и создавать потрясающие
+      цифровые решения.</p>
+    <p>Проработав долгое время (более 10 лет) на производстве, понял, что не развиваюсь, решил сменить сферу
+      деятельности. Выбрал разработку из-за возможности постоянного роста и развития, как своего, так и технологий,
+      которые применяются.</p>
+    <p>Самостоятельно начал изучать HTML, CSS, проходил разные тренажеры, очень заинтересовало и затянуло. Понял, что нужно комплексное обучение и пошел на профессию
+      "Фронтенд-разработчик". В процессе обучения верстал проекты используя такие технологии как BEM, Sass, Less, Flex, Grid.
+      Научился пользоваться графическими редакторами figma. Освоил систему контроля версий git.</p>
   </section>
 
   <section id="skills" class="section">
-    <h2>My Skills</h2>
+    <h2>Мои Навыки</h2>
     <div class="skills-container">
-      <div class="skill">
+      <div class="skill card">
         <svg fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           width="80px" height="80px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
 
@@ -62,9 +85,9 @@
 
         </svg>
         <!--                 <h3>HTML</h3> -->
-        <p>Proficient in structuring content for the web with semantic HTML.</p>
+        <p>Пишу структурированно и семантично.</p>
       </div>
-      <div class="skill">
+      <div class="skill card">
         <svg fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           width="80px" height="80px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
 
@@ -85,9 +108,10 @@
 
         </svg>
         <!--                 <h3>CSS</h3> -->
-        <p>Expert in styling with CSS, responsive design, and Flexbox/Grid layout.</p>
+        <p>БЭМ, scss, sass, gulp, mobile-first, адаптивная отзывчивая верстка, ретинизация графики, оптимизация времени
+          загрузки страницы в несколько раз с помощью Lighthouse, Flexbox/Grid layout.</p>
       </div>
-      <div class="skill">
+      <div class="skill card">
         <svg fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           width="80px" height="80px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
 
@@ -112,7 +136,8 @@
 
         </svg>
         <!--                 <h3>JavaScript</h3> -->
-        <p>Experienced in vanilla JavaScript, ES6+, and modern JS frameworks.</p>
+        <p>JS, ES6+, ESM, npm, fetch API, манипуляции с DOM, Event Loop, использование сторонних библиотек (pristine,
+          nouislider).</p>
       </div>
       <!--             <div class="skill">
                 <h3>React</h3>
@@ -121,45 +146,68 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="hobbies card">
+      <h4>Мои хобби</h4>
+      <ol>
+        <li>Спорт</li>
+        <li>Велосипед </li>
+        <li>Сериалы и кино</li>
+        <li>Рыбалка</li>
+      </ol>
+    </div>
+  </section>
+
   <section id="projects" class="section">
-    <h2>My Projects</h2>
+    <h2>Мои Проекты</h2>
     <div class="projects-container">
-      <div class="project">
-        <img src="project1.jpg" alt="Project 1">
-        <h3>Project 1</h3>
-        <p>A web application built with React and Firebase for real-time data.</p>
-        <a href="#" class="project-link">View Project</a>
+      <div class="project card">
+        <img src="img/sedona.png" width="200px" height="200px" alt="Сайт «Седона»">
+        <h3>Сайт «Седона»</h3>
+        <p>Учебный проект, по которому проходило обучение семантической верстке по макету на курсах от "HTML Academy".
+          Ключевые навыки: figma, html, css, pixelperfect, семантика, доступность, переполнение, flex-box, grid layout.
+        </p>
+        <a href="https://github.com/baranovdmitriy87/2324921-sedona-1" class="project-link">Репозиторий на GitHub</a>
+        <a href="https://baranovdmitriy87.github.io/2324921-sedona-1/" class="project-link">Сайт «Седона»</a>
       </div>
-      <div class="project">
-        <img src="project2.jpg" alt="Project 2">
-        <h3>Project 2</h3>
-        <p>A personal blog website using HTML, CSS, and JavaScript.</p>
-        <a href="#" class="project-link">View Project</a>
+      <div class="project card">
+        <img src="img/catenergy.png" alt="Сайт «Cat energy»">
+        <h3>Сайт «Cat energy»</h3>
+        <p>Учебный проект, по которому проходило обучение адаптивной верстке по макету на курсах от "HTML Academy".
+          Ключевые навыки: БЭМ, scss, sass, gulp, mobile-first, адаптивная отзывчивая верстка, ретинизация графики,
+          оптимизация времени загрузки страницы в несколько раз с помощью Lighthouse
+        </p>
+        <a href="https://github.com/baranovdmitriy87/2324921-cat-energy-1" class="project-link">Репозиторий на
+          GitHub</a>
+        <a href="https://github.com/baranovdmitriy87/2324921-cat-energy-1" class="project-link">Сайт «Cat energy»</a>
+      </div>
+      <div class="project card">
+        <img src="img/kekstagram.png" alt="Веб-приложение «Кекстаграм»">
+        <h3>Веб-приложение «Кекстаграм»</h3>
+        <p>Учебный проект, по которому проходило обучение разработке веб-интерфейсов на курсах от "HTML Academy".
+          Ключевые навыки: JS, ES6+, ESM, npm, fetch API, манипуляции с DOM, Event Loop, использование сторонних
+          библиотек (pristine, nouislider)..</p>
+        <a href="https://github.com/baranovdmitriy87/2324921-kekstagram-1" class="project-link">Репозиторий на
+          GitHub</a>
+        <a href="https://baranovdmitriy87.github.io/2324921-kekstagram-1/" class="project-link">Веб-приложение
+          «Кекстаграм»</a>
       </div>
     </div>
   </section>
 
-  <section class="socials" id="socials">
-    <h4>Список социальных сетей:</h4>
-    <a href="https://web.telegram.org/k/" target="_blank">Telegram</a>
-    <strong>| </strong>
-    <a href="https://telegram.me/s/INSTAGRAM" target="_blank">Instagram</a>
-    <strong>| </strong>
-    <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-  </section>
-
   <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <form action="#">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+    <h2>Связаться со мной</h2>
+    <form method="post"
+      action="https://e.mail.ru/inbox?utm_source=portal&utm_medium=portal_navigation_under_search_exp&utm_campaign=e.mail.ru&mt_link_id=jlsxn4&mt_sub1=id.mail.ru&mt_sub3=110546969&mt_sub4=413305">
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="email" placeholder="Ваш Email" required>
+      <textarea placeholder="Ваше сообщение" required></textarea>
+      <button type="submit">Отправить</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 My Portfolio | All rights reserved</p>
+    <p>&copy; 2025 Мое Портфолио | Все права защищены</p>
   </footer>
 
   <script src="/scripts/app.js"></script>
