@@ -5,10 +5,13 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f5f5f5;
+  font-family: Roboto, Arial, sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
 }
 
 ul {
@@ -124,7 +127,6 @@ h2 {
 /* socials */
 .socials {
   margin: 20px auto 70px;
-  width: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -142,6 +144,16 @@ h2 {
 
 .socials-item:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    margin-left: 10px;
+  }
 }
 
 /* Skills */
@@ -169,6 +181,25 @@ h2 {
 
 .skill svg {
   margin-bottom: 15px;
+}
+
+/* Work */
+.work-table {
+  width: 100%;
+  /* display: flex; */
+
+  td {
+    padding: 20px 0 10px;
+  }
+}
+
+.work-table td:nth-child(2),
+.work-table td:nth-child(3) {
+  color: #7a7878;
+}
+
+.work-row {
+text-align: center;
 }
 
 /* Projects */
@@ -223,11 +254,16 @@ h2 {
 
 /* Contact Form */
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 30px;
+
+  textarea,input::placeholder {
+   opacity: 0.6;
+ }
 }
+
 
 form input,
 form textarea {
