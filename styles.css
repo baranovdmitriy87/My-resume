@@ -1,12 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 body {
   font-family: Roboto, Arial, sans-serif;
@@ -24,16 +23,22 @@ ul {
 header {
     background-color: #333;
     color: white;
-    padding: 1rem 0;
+    padding: 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    padding: 20px 40px;
+
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
 }
 
 nav {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    column-gap: 30px;
     justify-content: space-between;
     align-items: center;
 }
@@ -41,6 +46,8 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .nav-links li {
@@ -58,26 +65,52 @@ nav {
     color: #64ffda;
 }
 
+@media (max-width:768px) {
+  .nav-links a,
+   nav .logo {
+    font-size: 14px;
+  }
+ }
+
 /* Hero Section */
 .hero {
     background: linear-gradient(#07081b, #484878);
     color: white;
     text-align: center;
     padding: 150px 20px;
+
+    @media (max-width:768px) {
+      padding: 50px 20px;
+    }
 }
 
 .hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 30px;
   margin: 0 auto;
-  width: 1000px;
+  max-width: 1200px;
+  /* width: 100%; */
+  justify-items: center;
+  justify-content: center;
 
+  @media (max-width:768px) {
+    display: flex;
+    flex-direction: column;
+ }
 }
 
 .hero-container img {
+  width: 400px;
   border-radius: 12px;
   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+
+  @media (max-width:768px) {
+    align-self: center;
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .hero h1 {
@@ -126,7 +159,7 @@ h2 {
 
 /* socials */
 .socials {
-  margin: 20px auto 70px;
+  margin: 20px auto 50px;
   display: flex;
   flex-direction: column;
 }
@@ -207,6 +240,11 @@ text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+
+    @media (max-width:768px) {
+      display: flex;
+      flex-direction: column;
+    }
 }
 
 .project {
