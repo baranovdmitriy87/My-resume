@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Сайт-портфолио Дмитрий Баранов, сайт-резюме Дмитрий Баранов, резюме Дмитрий Баранов, портфолио Дмитрий Баранов">
+  <meta name="description"
+    content="Сайт-портфолио Дмитрий Баранов, сайт-резюме Дмитрий Баранов, резюме Дмитрий Баранов, портфолио Дмитрий Баранов">
 
   <title>Your Portfolio</title>
   <link rel="stylesheet" href="styles.css">
@@ -29,9 +30,7 @@
 
       <div class="hero-content">
         <h1>Дмитрий Баранов</h1>
-        <!-- <h2>Добро пожаловать на мой сайт-резюме</h2> -->
         <p>Узнайте немного обо мне, моих навыках, опыте работы и проектах.</p>
-
         <h4>Список социальных сетей:</h4>
         <ul class="socials">
           <li class="socials-item">
@@ -111,7 +110,6 @@
           </g>
 
         </svg>
-        <!--                 <h3>HTML</h3> -->
         <p>Пишу структурированно и семантично.</p>
       </div>
       <div class="skill card">
@@ -134,7 +132,6 @@
           </g>
 
         </svg>
-        <!--                 <h3>CSS</h3> -->
         <p>БЭМ, scss, sass, gulp, mobile-first, адаптивная отзывчивая верстка, ретинизация графики, Flexbox/Grid layout.
         </p>
       </div>
@@ -168,18 +165,6 @@
     </div>
   </section>
 
-  <!-- <section class="section">
-    <div class="hobbies card">
-      <h4>Мои хобби</h4>
-      <ol>
-        <li>Спорт</li>
-        <li>Велосипед </li>
-        <li>Сериалы и кино</li>
-        <li>Рыбалка</li>
-      </ol>
-    </div>
-  </section> -->
-
   <section class="section" id="work">
     <h2>Опыт работы</h2>
     <div class="card work">
@@ -208,34 +193,41 @@
     <div class="projects-container">
       <div class="project card">
         <img src="img/sedona.png" width="200px" height="200px" alt="Сайт «Седона»">
-        <h3>Сайт «Седона»</h3>
-        <p>Учебный проект, по которому проходило обучение семантической верстке по макету на курсах от "HTML Academy".
-          Ключевые навыки: figma, html, css, pixelperfect, семантика, доступность, переполнение, flex-box, grid layout.
-        </p>
-        <a href="https://github.com/baranovdmitriy87/2324921-sedona-1" class="project-link">Репозиторий на GitHub</a>
-        <a href="https://baranovdmitriy87.github.io/2324921-sedona-1/" class="project-link">Сайт «Седона»</a>
+        <div class="project-content">
+          <h3>Сайт «Седона»</h3>
+          <p>Учебный проект, по которому проходило обучение семантической верстке по макету на курсах от "HTML Academy".
+            Ключевые навыки: figma, html, css, pixelperfect, семантика, доступность, переполнение, flex-box, grid
+            layout.
+          </p>
+          <a href="https://github.com/baranovdmitriy87/2324921-sedona-1" class="project-link">Репозиторий на GitHub</a>
+          <a href="https://baranovdmitriy87.github.io/2324921-sedona-1/" class="project-link">Сайт «Седона»</a>
+        </div>
       </div>
       <div class="project card">
         <img src="img/catenergy.png" alt="Сайт «Cat energy»">
-        <h3>Сайт «Cat energy»</h3>
-        <p>Учебный проект, по которому проходило обучение адаптивной верстке по макету на курсах от "HTML Academy".
-          Ключевые навыки: БЭМ, scss, sass, gulp, mobile-first, адаптивная отзывчивая верстка, ретинизация графики,
-          оптимизация времени загрузки страницы в несколько раз с помощью Lighthouse
-        </p>
-        <a href="https://github.com/baranovdmitriy87/2324921-cat-energy-1" class="project-link">Репозиторий на
-          GitHub</a>
-        <a href="https://github.com/baranovdmitriy87/2324921-cat-energy-1" class="project-link">Сайт «Cat energy»</a>
+        <div class="project-content">
+          <h3>Сайт «Cat energy»</h3>
+          <p>Учебный проект, по которому проходило обучение адаптивной верстке по макету на курсах от "HTML Academy".
+            Ключевые навыки: БЭМ, scss, sass, gulp, mobile-first, адаптивная отзывчивая верстка, ретинизация графики,
+            оптимизация времени загрузки страницы в несколько раз с помощью Lighthouse
+          </p>
+          <a href="https://github.com/baranovdmitriy87/2324921-cat-energy-1" class="project-link">Репозиторий на
+            GitHub</a>
+          <a href="https://github.com/baranovdmitriy87/2324921-cat-energy-1" class="project-link">Сайт «Cat energy»</a>
+        </div>
       </div>
       <div class="project card">
         <img src="img/kekstagram.png" alt="Веб-приложение «Кекстаграм»">
-        <h3>Веб-приложение «Кекстаграм»</h3>
-        <p>Учебный проект, по которому проходило обучение разработке веб-интерфейсов на курсах от "HTML Academy".
-          Ключевые навыки: JS, ES6+, ESM, npm, fetch API, манипуляции с DOM, Event Loop, использование сторонних
-          библиотек (pristine, nouislider)..</p>
-        <a href="https://github.com/baranovdmitriy87/2324921-kekstagram-1" class="project-link">Репозиторий на
-          GitHub</a>
-        <a href="https://baranovdmitriy87.github.io/2324921-kekstagram-1/" class="project-link">Веб-приложение
-          «Кекстаграм»</a>
+        <div class="project-content">
+          <h3>Веб-приложение «Кекстаграм»</h3>
+          <p>Учебный проект, по которому проходило обучение разработке веб-интерфейсов на курсах от "HTML Academy".
+            Ключевые навыки: JS, ES6+, ESM, npm, fetch API, манипуляции с DOM, Event Loop, использование сторонних
+            библиотек (pristine, nouislider)..</p>
+          <a href="https://github.com/baranovdmitriy87/2324921-kekstagram-1" class="project-link">Репозиторий на
+            GitHub</a>
+          <a href="https://baranovdmitriy87.github.io/2324921-kekstagram-1/" class="project-link">Веб-приложение
+            «Кекстаграм»</a>
+        </div>
       </div>
     </div>
   </section>

@@ -11,12 +11,33 @@ body {
   font-family: Roboto, Arial, sans-serif;
   color: #333;
   background-color: #f5f5f5;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 }
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+/* Section Styles */
+.section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
 }
 
 /* Header & Navigation */
@@ -46,7 +67,7 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
 
@@ -113,19 +134,34 @@ nav {
   }
 }
 
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 30px;
+
+    @media (max-width:768px) {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
 }
 
 .hero h4 {
     font-size: 20px;
+
+    @media (max-width:768px) {
+      font-size: 18px;
+    }
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    line-height: 30px;
+    font-size: 19px;
+    line-height: 24px;
     margin-bottom: 40px;
+
+    @media (max-width:768px) {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
 }
 
 
@@ -143,19 +179,6 @@ nav {
     background-color: #00b3b3;
 }
 
-/* Section Styles */
-.section {
-    max-width: 1200px;
-    margin: 80px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
 
 /* socials */
 .socials {
@@ -169,6 +192,10 @@ h2 {
   color: white;
   font-size: 1.1rem;
   transition: color 0.3s ease;
+
+  @media (max-width:768px) {
+    font-size: 16px;
+  }
 }
 
 .socials-item a:hover {
@@ -219,7 +246,10 @@ h2 {
 /* Work */
 .work-table {
   width: 100%;
-  /* display: flex; */
+
+  @media (max-width:768px) {
+   font-size: 14px;
+  }
 
   td {
     padding: 20px 0 10px;
@@ -251,6 +281,12 @@ text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.project-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .project img {
