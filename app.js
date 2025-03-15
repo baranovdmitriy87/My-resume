@@ -8,7 +8,7 @@ document.querySelectorAll('.nav-site a').forEach(anchor => {
     });
 });
 
-
+// burgermenu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
