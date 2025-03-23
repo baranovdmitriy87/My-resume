@@ -2,4 +2,4 @@
 
 ## Немного обо мне и моих достижениях можно посмотреть по ссылке ниже;)
 
-[Мое резюме](https://baranovdmitriy87.github.io/My-Portfolio/)
+[Мое резюме](https://baranovdmitriy87.github.io/My-resume/)
