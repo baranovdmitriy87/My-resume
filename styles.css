@@ -23,6 +23,10 @@ ul {
   list-style: none;
 }
 
+p {
+  font-size: 18px;
+}
+
 /* Section Styles */
 .section {
   max-width: 1200px;
@@ -167,11 +171,6 @@ a.nav-link:hover {
     margin: 0 auto;
   }
 
-
-  .nav-menu li {
-    padding: 7px 0;
-  }
-
   a.nav-link {
     margin: 1rem 0;
     z-index: 1;
@@ -231,7 +230,8 @@ nav {
 }
 
 .nav-site li {
-   margin: 0 20px;
+  padding: 7px 0;
+  margin: 0 20px;
 }
 
 .nav-site a {
@@ -245,12 +245,19 @@ nav {
   color: #64ffda;
 }
 
-@media (max-width:768px) {
-  .nav-site a,
-   nav .logo {
-    font-size: 14px;
+@media (max-width:965px) {
+  .nav-site a {
+    text-transform: uppercase;
   }
- }
+
+  .nav-site li {
+    padding: 10px 0;
+  }
+}
+
+nav .logo {
+ font-size: 1.15rem;
+}
 
 /* Hero Section */
 .hero {
@@ -394,7 +401,7 @@ nav {
 }
 
 .skill p {
-  font-size: 1rem;
+  font-size: 18px;
   color: #555;
 }
 
