@@ -264,7 +264,7 @@ nav .logo {
   background: linear-gradient(#07081b, #484878);
   color: white;
   text-align: center;
-  padding: 150px 20px;
+  padding: 100px 20px;
 
  @media (max-width:768px) {
    padding: 50px 20px;
@@ -280,6 +280,7 @@ nav .logo {
   /* width: 100%; */
   justify-items: center;
   justify-content: center;
+  align-items: center;
 
   @media (max-width:768px) {
     display: flex;
@@ -330,6 +331,16 @@ nav .logo {
   }
 }
 
+.hero-contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+
+  span {
+    margin: 5px 0;
+    font-size: 1.1rem;
+  }
+}
 
 .cta {
   padding: 10px 20px;
@@ -479,12 +490,12 @@ text-align: center;
 
 .project-link {
   text-decoration: none;
-  color: #64ffda;
+  color: #00b3b3;
   font-weight: bold;
 }
 
 .project-link:hover {
-  color: #00b3b3;
+  color: #007c7c;
   transition: color 0.3s ease;
 }
 
