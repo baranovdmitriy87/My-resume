@@ -504,7 +504,7 @@ text-align: center;
 }
 
 /* Contact Form */
-form {
+.form-contacts {
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -516,8 +516,8 @@ form {
 }
 
 
-form input,
-form textarea {
+.form-contacts input,.form__input-box,
+.form-contacts textarea {
   padding: 10px;
   margin: 10px 0;
   width: 100%;
@@ -526,8 +526,15 @@ form textarea {
   border: 1px solid #ddd;
 }
 
-form button {
+.form__input-box {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-contacts button {
   padding: 10px 20px;
+  margin-top: 20px;
   background-color: #64ffda;
   color: #0a192f;
   border: none;
@@ -537,7 +544,7 @@ form button {
   transition: background-color 0.3s ease;
 }
 
-form button:hover {
+.form-contacts button:hover {
   background-color: #00b3b3;
 }
 
